@@ -16,7 +16,7 @@
     sleep 3
 
 #add items to .bashrc
-    echo 'screenfetch' >> ~/.bashrc
+    grep -q "screenfetch" ~/.bashrc || echo "screenfetch" | sudo tee -a ~./bahsrc > /dev/null
     echo -e "$REDBKGSTART ~~BASHRC FINISHED~~ $BKGEND"
     sleep 3
 
