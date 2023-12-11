@@ -13,7 +13,6 @@
 
 #add items to .bashrc
     echo 'screenfetch' >> ~/.bashrc
-    echo "sudo sudo mount /dev/sdc1" >> ~/.bashrc
     echo "### ALL LINES ADDED TO .BASHRC...MOVING ON ###"
     sleep 4
 
@@ -22,7 +21,6 @@
     #makes mounting directories"
         sudo mkdir /run/media/cyberhacker/mntsda3
         sudo mkdir /run/media/cyberhacker/mntsdb2
-        sudo mkdir /run/media/cyberhacker/mntppd
         echo "### ALL MOUNTING POINTS MADE...MOVING ON ###"
         sleep 4
 
