@@ -42,7 +42,7 @@
 
                 #write new home location to fstab
 
-                    TARGETFSTAB="practicefstab"
+                    TARGETFSTAB="/etc/fstab"
                     HOMEEXISTCHECK=/home
                     HOMEPARTLINE="$HOMEPARTDEV                                   /home                            $HOMEPARTFS                defaults                               0 0"
                     sed -i '\| /home |d' $TARGETFSTAB
@@ -70,7 +70,6 @@
 
                 #write new home location to fstab
 
-                    TARGETFSTAB="practicefstab"
                     FIRSTPARTLINE="$FIRSTPARTDEV                                   /run/media/$USERNAME/$FIRSTPARTLAB                            $FIRSTPARTFS               defaults                               0 0"
                     SECONDTPARTLINE="$SECONDPARTDEV                                   /run/media/$USERNAME/$SECONDPARTLAB                            $SECONDPARTFS               defaults                               0 0"
                     echo "$FIRSTPARTLINE" | sudo tee -a $TARGETFSTAB > /dev/null
