@@ -26,7 +26,7 @@
 
 ##### Simple DWEBP
 
-###### Does a similar thing as the DD script above, prompting you for the input and output so you dont have to remmeber the syntax for DWEBP.
+###### Does a similar thing to the DD script above, prompting you for the input and output so you dont have to remmeber the syntax for DWEBP.
 
 ### Really Important Stuff
 
