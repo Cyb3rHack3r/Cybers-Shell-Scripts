@@ -112,9 +112,17 @@ lic
 
     read -p "WOULD YOU LIKE TO INSTALL THE PREDETERMINED LIST OF PACKAGES (y/n)?" PACKAGECONFIRM
         if [ "$PACKAGECONFIRM" = "y" ]; then
-        yay -S --noconfirm steam brave-bin kvantum code virtualbox virtualbox-guest-utils partitionmanager screenfetch plex-media-server htop libotf deluge #gets yay to install the first result found (-S) for each package listed and doesn't ask for y/n confirms (--noconfirm)
+        yay -S --noconfirm steam brave-bin kvantum code virtualbox virtualbox-guest-utils partitionmanager screenfetch plex-media-server htop libotf deluge icaclient #gets yay to install the first result found (-S) for each package listed and doesn't ask for y/n confirms (--noconfirm)
         else
         echo -e "$BLUETXTSTART NO PACKAGES, NO PROBLEMS $BKGEND";
+        fi
+    
+    #option to remove firefox
+        read -p "WOULD YOU LIKE TO REMOVE FIREFOX (y/n)?" FIREFOXREMCONFIRM
+        if [ "$FIREFOXREMCONFIRM" = "y" ]; then
+        sudo pacman -Rns --noconfirm firefox
+        else
+        echo -e "$BLUETXTSTART ALL RIGHT THEN, KEEP YOUR FIREFOX $BKGEND";
         fi
     
     echo -e "$MAGBKGSTART FINISHED PACKAGE SETUP $BKGEND";
@@ -211,6 +219,24 @@ lic
             fi
 
     echo -e "$MAGBKGSTART ~~FINISHED GUI CUSTOMIZATION~~ $BKGEND"
+    sleep 2
+
+#system update
+
+    echo -e "$REDBKGSTART ~~OPTIONAL SYSTEM UPDATE~~ $BKGEND"
+
+    #optional update
+            read -p "DO YOU WANT TO UPDATE YOUR SYSTEM NOW (y/n)?" UPDCONFIRM
+            if [ "$UPDCONFIRM" = "y" ]; then
+
+                #run update command
+                    sudo pacman -Syu --noconfirm #super DANGERMOUSE to run with the --noconfirm command but i live on the wild side
+
+            else
+            echo -e "$BLUETXTSTART OK, NO UPDATE $BKGEND";
+            fi
+
+    echo -e "$MAGBKGSTART ~~FINISHED SYSTEM UPDATES~~ $BKGEND"
     sleep 2
 
 #echo the all done message
