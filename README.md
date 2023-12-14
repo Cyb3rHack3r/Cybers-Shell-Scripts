@@ -15,6 +15,7 @@
 - ###### Enables services (if appropriate packages were installed)
 - ###### Downloads and installs kvantum themes
 - ###### Downloads and installs some fonts
+- ###### Updates the system
 
 ###### The entire script is interactive and presents you with a bunch of options so you can choose what you do and do not want it to do.
 
@@ -36,7 +37,7 @@
 - ###### It is entirely built on the supposition you are using pacman with `yay` installed (Defaults for EndeavourOS).
 - ###### The script is exclusively tested with BASH, I don't know enough about other shells to tell you if it will only work in BASH but it's something to be aware of.
 - ###### The partition mounting functionality is built to work with FSTAB. If you are not using FSTAB I'd seriously doubt that this function will do anything, It may even cause damage.
-- ###### At the time being I haven't configured the ability to add your own packages to the list of packages to be installed. Therefore, If you choose to use this part of the script it will install a predetermined list of packages that I personally find usefull. These packages are `steam` `brave` `kvantum` `vscode` `virtual box` `virtual box guest additions` `kde partition manager` `screenfetch` `plex media server` `htop` and `libotf`
+- ###### At the time being I haven't configured the ability to add your own packages to the list of packages to be installed. Therefore, If you choose to use this part of the script it will install a predetermined list of packages that I personally find usefull. These packages are `steam` `brave` `kvantum` `vscode` `virtual box` `virtual box guest additions` `kde partition manager` `screenfetch` `plex media server` `htop` `deluge` `icaclient` and `libotf`
 - ###### The customizations installed are `Orchis-kde` `Layan-kde` `Reversal-icon-theme` `SF Pro Fonts`. The KDE themes have full `kvantum` functionality but you dont need kvantum to use them, you just wont get some of the more fancy features.
 
 ### Modifying the Script
